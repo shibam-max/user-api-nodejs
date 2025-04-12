@@ -49,3 +49,26 @@ git clone https://github.com/shibam-max/user-api-nodejs.git
 cd user-api-nodejs
 npm install
 npm start
+
+🧪 Sample API Endpoints
+Register User
+POST /api/users/register
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "123456"
+}
+
+Login User
+POST /api/users/login
+
+{
+  "email": "john@example.com",
+  "password": "123456"
+}
+
+Protected Route (example)
+GET /api/users/profile
+
+Header: Authorization: Bearer <token>
